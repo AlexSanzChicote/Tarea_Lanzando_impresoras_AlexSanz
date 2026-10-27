@@ -1,4 +1,4 @@
-public class CuentaAtras implements  Runnable{
+public class Impresora implements  Runnable{
 
     //Definicion de variables
     private int NumeroPaginas;
@@ -11,7 +11,7 @@ public class CuentaAtras implements  Runnable{
     private final int idPagina=contadorPaginas;
 
     //constructor
-    public CuentaAtras(int NumeroPaginas,String Nombre) {
+    public Impresora(int NumeroPaginas, String Nombre) {
         this.NumeroPaginas = NumeroPaginas;
         this.Nombre=Nombre;
         contadorPaginas++;
