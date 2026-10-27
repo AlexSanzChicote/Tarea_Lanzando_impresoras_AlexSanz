@@ -31,6 +31,6 @@ public class Impresora implements  Runnable{
                  return;
             }
         }
-        }
     }
+}
 
