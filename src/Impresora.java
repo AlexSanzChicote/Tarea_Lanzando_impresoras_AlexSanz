@@ -22,7 +22,10 @@ public class Impresora implements  Runnable{
         // for para hacer de la pagina 1 hasta la pedida
         for (int paginaActual = 1; paginaActual <= NumeroPaginas; paginaActual++) {
             System.out.println("Impresora " + Nombre + ", Imprimiendo página: " + paginaActual + " de " + NumeroPaginas);
-
+            //Mensaje de finalizacion con if
+            if( paginaActual==NumeroPaginas){
+                System.out.println("Impresora "+Nombre+", finalizo la impresion");
+            }
             // Restablece la interrupción y termina el la tarea
             try {
                 Thread.sleep(1000);
@@ -31,6 +34,7 @@ public class Impresora implements  Runnable{
                  return;
             }
         }
+
+        }
     }
-}
 
